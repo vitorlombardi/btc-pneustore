@@ -12,8 +12,11 @@ $color-red: #A10D13;
 	}
 };
 
-form {
+.form-account {
 	animation: appear 700ms;
+}
+
+form{
 
 	& input {
 		outline: none;

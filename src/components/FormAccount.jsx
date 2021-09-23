@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/formAccount.scss'
-import { Alert } from 'reactstrap';
+// import { Alert } from 'reactstrap';
 
 export default function FormAccount() {
 
 	const [registrar, setRegistrar] = useState(false)
 
 	return (
-		<>
+		<div className='form-account'>
 		{!registrar ? (
 			<form className='col-12 col-lg-8 '>
 			<div className=' d-flex flex-column'>
@@ -33,7 +33,7 @@ export default function FormAccount() {
 			</div>
 		</form>
 		) : (
-			<form className='col-12 col-lg-6'>
+			<form className='col-12 col-lg-8'>
 			<div className='d-flex flex-column'>
 				<h3 className='fw-bold'>Criar conta</h3>
 				<p>Crie uma conta para prosseguir com sua compra.</p>
@@ -82,6 +82,6 @@ export default function FormAccount() {
 		</form>
 		)}
 		
-		</>
+		</div>
 	)
 }
