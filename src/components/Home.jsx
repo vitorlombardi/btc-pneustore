@@ -4,6 +4,7 @@ import '../styles/global.scss'
 import '../styles/home.scss'
 import Order from './Order';
 import Cupom from './Cupom';
+import ResumoPedido from './resumoPedido';
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 					<Col className='infos' md='4'>
 						<Order />
 						<Cupom />
+						<ResumoPedido />
 					</Col>
 
 				</Row>

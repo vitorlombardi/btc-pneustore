@@ -1,3 +1,29 @@
+$color-green: #8aac03;
+
 .cupom {
-	border-top: 1px solid rgb(221, 221, 221);
+  border-top: 1px solid rgb(221, 221, 221);
+  width: 27rem;
+  padding: 2rem;
+
+  .cupom-button {
+    margin-left: 1rem;
+    color: $color-green;
+    border: 1px solid;
+    border-color: $color-green;
+    background-color: white;
+
+	& :hover{
+		color: #8aac03;
+		background-color: $color-green;
+		color: white;
+	}
+  }
+
+  & input {
+    width: 16rem;
+  }
+}
+
+hr{
+	width: 27rem;
 }

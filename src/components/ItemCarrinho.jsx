@@ -9,9 +9,10 @@ export default function ItemCarrinho() {
 			<div className="col-8">
 				<button className='close'>x</button>
 				<h4 className='title'>Pneu Continental aro '16  * 205/55R16 91w run flat</h4>
-				<button className='add-item'>+</button>
-				<span type="number" className='quant-item' disabled >4</span>
 				<button className='add-item'>-</button>
+				<span type="number" className='quant-item' disabled >1</span>
+				<button className='add-item'>+</button>
+				<p>R$350,00</p>
 			</div>
 		</div>
 	)
