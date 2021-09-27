@@ -5,6 +5,7 @@ import '../styles/home.scss'
 import Order from './Order';
 import Cupom from './Cupom';
 import ResumoPedido from './resumoPedido';
+import FormPagamento from './formPagamento'
 
 export default function Home() {
 	return (
@@ -13,7 +14,8 @@ export default function Home() {
 				<Row>
 
 					<Col md='8'>
-						<FormAccount />
+						{/* <FormAccount /> */}
+						<FormPagamento/>
 					</Col>
 
 					<Col className='infos' md='4'>

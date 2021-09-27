@@ -12,13 +12,15 @@ $color-green: #8aac03;
     border-color: $color-green;
     border-radius: 0.5rem;
     background-color: white;
+  }
 
-	& :hover{
+  .cupom-button:hover{
 		color: #8aac03;
 		background-color: $color-green;
 		color: white;
 	}
-  }
+
+  
 
   & input {
     width: 16rem;
