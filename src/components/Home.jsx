@@ -6,6 +6,7 @@ import Order from './Order';
 import Cupom from './Cupom';
 import ResumoPedido from './resumoPedido';
 import FormPagamento from './formPagamento'
+import Entrega from './entrega'
 
 export default function Home() {
 	return (
@@ -15,7 +16,8 @@ export default function Home() {
 
 					<Col md='8'>
 						{/* <FormAccount /> */}
-						<FormPagamento/>
+						{/* <FormPagamento/> */}
+						<Entrega />
 					</Col>
 
 					<Col className='infos' md='4'>
