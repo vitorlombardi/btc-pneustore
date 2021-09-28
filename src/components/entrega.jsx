@@ -1,10 +1,12 @@
 import '../styles/entrega.scss'
 import { useState } from 'react'
+import ProgressBar from './FormAccount/ProgressBar';
 
 export default function Entrega(){
     const[CEP, setCEP] = useState(false)
     return(
         <div>
+            <ProgressBar/>
             <form className='col-12 col-lg-8 '>
             <div className=' d-flex flex-column escolha-itens'>
 				<h3 className='fw-bold'>Escolha uma opção de entrega </h3>

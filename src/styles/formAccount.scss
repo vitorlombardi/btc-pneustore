@@ -24,6 +24,7 @@ form{
 		background-color: rgb(235, 235, 235);
 		padding: 0.3rem 0.5rem;
 		font-weight: 600;
+		border-radius: 0.2rem;
 
 		&::placeholder {
 			font-weight: lighter;
@@ -35,11 +36,35 @@ form{
 		color: rgb(98, 98, 98);
 	}
 
-	& button {
+	& button.submit {
 		outline: none;
 		border: none;
 		background-color: $color-green;
 		color: white;
 		padding: 0.2rem 0.5rem;
+		border-radius: 0.2rem;
+	}
+
+	.create-account {
+		text-decoration: underline;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.back {
+		border: none;
+		padding: 0.2rem ;
+		margin: 0 auto;
+		margin-top: 1rem;
+		width: 100px;
+		background-color: gray;
+		color: white;
+		border-radius: 0.2rem;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
