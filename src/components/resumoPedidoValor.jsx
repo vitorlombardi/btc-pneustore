@@ -1,4 +1,4 @@
-import '../styles/resumoPedido.scss'
+import '../styles/resumoPedidoValor.scss'
 
 export default function ResumoPedido() {
 	return (
