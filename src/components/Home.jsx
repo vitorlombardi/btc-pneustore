@@ -3,11 +3,13 @@ import '../styles/global.scss'
 import '../styles/home.scss'
 import Order from './Order';
 import Cupom from './Cupom';
-import ResumoPedido from './resumoPedido';
+import ResumoPedidoValor from './resumoPedidoValor';
 import FormPagamento from './formPagamento'
 import Entrega from './entrega'
 import Header from "./Header";
 import FormAccount from "./FormAccount/FormAccount";
+import Resumo from "./resumo"
+import ItemCarrinho from './ItemCarrinho';
 
 
 
@@ -24,12 +26,13 @@ export default function Home() {
               {/* <FormAccount /> */}
 			        {/* <FormPagamento/> */}
 			        {/* <Entrega />  */}
-              
+              <Resumo/>
             </Col>
 
             <Col className="infos" md="4">
               <Order />
               <Cupom />
+              <ResumoPedidoValor/>
             </Col>
           </Row>
         </Container>
