@@ -1,0 +1,32 @@
+.Modal{
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color:rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .info-Modal{
+        background-color:#fff;
+        border: 1px solid black;
+        color: #000;
+        width: 60%;
+        height: 60%;
+
+        span{
+            cursor: pointer;
+        }
+    }
+
+    .endereco:hover{
+        background-color:rgb(128,3,121,0.2);
+        border: 1px solid rgb(128, 3, 121, 0.8);
+        border-radius: .05rem;
+    }
+}
+

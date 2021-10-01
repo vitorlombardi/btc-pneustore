@@ -1,3 +1,5 @@
+$color-green: #8aac03;
+
 .escolha-itens{
 
     .escolha-entrega-casa{
@@ -8,4 +10,35 @@
     .card-entrega{
         cursor: pointer;
     }
+    
+    .input{
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            display: none;
+        }
+    }
+
+    .button-cep{
+        width: 10rem;
+        height: 2rem;
+        margin-left: 1rem;
+        color: white;
+        border: 1px solid;
+        border-color: $color-green;
+        border-radius: 0.5rem;
+        background-color: $color-green;
+    }
+
+    .button-cep:hover{
+		color: #8aac03;
+		background-color:white;
+		color: $color-green;
+	}
+
+    .card-entrega:hover{
+        border: 2px solid $color-green
+    }
+
+    
 }
