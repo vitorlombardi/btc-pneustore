@@ -1,3 +1,4 @@
+import React from 'react'
 import '../styles/formPagamento.scss'
 
 export default function FormPagamento() {
@@ -27,9 +28,9 @@ export default function FormPagamento() {
                             <input className='mt-1 '  type="number" maxLength='3'  minlength="3" required/>
                         </div>
                     </div>
-
-                    
-
+                    <div className='mt-3'>
+                        <b>Clique aqui</b> para opções de parcelamento
+                    </div>
                     <button className='mt-3 botao' type='submit'>Continuar</button>
                 </div>
 		    </form>
