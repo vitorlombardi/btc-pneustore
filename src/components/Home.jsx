@@ -10,6 +10,7 @@ import Header from "./Header";
 import FormAccount from "./FormAccount/FormAccount";
 import Resumo from "./resumo"
 import ItemCarrinho from './ItemCarrinho';
+import React from 'react';
 
 
 
@@ -23,10 +24,10 @@ export default function Home() {
         <Container className="mt-4">
           <Row>
             <Col md="8">
-              {/* <FormAccount /> */}
+              {/* <FormAccount />  */}
 			        {/* <FormPagamento/> */}
-			        {/* <Entrega />  */}
-              <Resumo/>
+			        <Entrega /> 
+              {/* <Resumo/> */}
             </Col>
 
             <Col className="infos" md="4">
