@@ -14,24 +14,35 @@ export default function Modal({ open, setOpen, setEnderecoEscolhido }) {
               </span>
             </div>
             {CriarEnderecos ? (
-              <div className='enderecos'>
-                  <h1>Seus endereços</h1>
-                  <div className="endereco">
-                      <input type="radio" name='id-endereco'/>
-                      <span><b>Endereço:</b></span>
-                      <span><b>Complemento</b></span>
-                      <span><b>bairro</b></span>
-                      <span><b>uf</b></span>
-                      <span><b>CEP</b></span>
-                  </div>
+              <div className='mt-1 enderecos'>
+                  <h1 className='d-flex justify-content-center'>Seus endereços</h1>
+                  <div className="mt-1 endereco-info">
+                      <div className='endereco'>
+                        <input type="radio" name='id-endereco'/>
+                        <span><b>Endereço: </b>rua da curva reta 16</span>
+                        <span><b>Complemento: </b>lado par</span>
+                        <span><b>bairro: </b>jardim lugar nenhum</span>
+                        <span><b>uf: </b> SP</span>
+                        <span><b>CEP: </b>00000-000</span>
+                      </div>
 
-                  <div className="endereco">
-                      <input type="radio" name='id-endereco'/>
-                      <span><b>Endereço:</b></span>
-                      <span><b>Complemento</b></span>
-                      <span><b>bairro</b></span>
-                      <span><b>uf</b></span>
-                      <span><b>CEP</b></span>
+                      <div className='endereco'>
+                        <input type="radio" name='id-endereco'/>
+                        <span><b>Endereço: </b>rua da curva reta 16</span>
+                        <span><b>Complemento: </b>lado par</span>
+                        <span><b>bairro: </b>jardim lugar nenhum</span>
+                        <span><b>uf: </b> SP</span>
+                        <span><b>CEP: </b>00000-000</span>
+                      </div>
+
+                      <div className='endereco'>
+                        <input type="radio" name='id-endereco'/>
+                        <span><b>Endereço: </b>rua da curva reta 16</span>
+                        <span><b>Complemento: </b>lado par</span>
+                        <span><b>bairro: </b>jardim lugar nenhum</span>
+                        <span><b>uf: </b> SP</span>
+                        <span><b>CEP: </b>00000-000</span>
+                      </div>
                   </div>
 
                   <div className="adicionar-endereco">

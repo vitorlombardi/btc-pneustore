@@ -23,9 +23,35 @@
         }
     }
 
+    .enderecos{
+        
+        
+        & h1{
+            font-size: 2rem;
+        }
+    }
+
+    .endereco-info{
+        border-top: 1px solid rgb(98, 98, 98);
+        border-bottom: 1px solid rgb(98, 98, 98);
+        border-radius: 0.5rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+        padding: 1rem;
+
+        & span{
+            margin-left: 0.5rem;
+        }
+
+        .endereco{
+            margin-top: 0.4rem;
+        }
+    }
+
     .endereco:hover{
         background-color:rgb(128,3,121,0.2);
-        border: 1px solid rgb(128, 3, 121, 0.8);
+        width: 100%;
+        // border: 1px solid rgb(128, 3, 121, 0.8);
         border-radius: .05rem;
     }
 }

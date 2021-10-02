@@ -39,23 +39,6 @@ export default function Entrega() {
           </div>
 
           <div className="w-full flex justify-between items-center">
-            {/* <div classNameName="escolha-entrega-casa">
-                        
-                        <div className="d-flex flex-row">
-                            <div classNameName="mt-1">
-                                    <p>Entregar no meu endereço</p>
-                                </div>
-                            <div classNameName="d-flex mt-1">
-                                <input classNameName="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                            </div>
-                        </div>
-                        <div classNameName=" d-flex info">
-                            <p>Norma</p>
-                            <p>De 4 a 7 dias úteis</p>
-                            <span>R$34,90</span>
-                        </div>
-                        
-                    </div> */}
 
             {CEP ? (
               <div>

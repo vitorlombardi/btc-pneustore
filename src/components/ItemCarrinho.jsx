@@ -1,6 +1,9 @@
+import React from 'react'
 import '../styles/itemCarrinho.scss'
 
 export default function ItemCarrinho() {
+
+
 	return (
 		<div className='row mt-4 item-cart'>
 			<div className="col-4">
