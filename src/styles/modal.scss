@@ -1,3 +1,5 @@
+$color-default: #4e008e;
+
 .Modal{
     width: 100%;
     height: 200vh;
@@ -9,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 
     .info-Modal{
@@ -17,6 +20,7 @@
         color: #000;
         width: 60%;
         height: 60%;
+        border-radius: 0.8rem;
 
         span{
             cursor: pointer;
@@ -25,9 +29,18 @@
 
     .enderecos{
         
-        
         & h1{
             font-size: 2rem;
+        }
+    }
+
+    .info-tela-endereco{
+        padding: 1rem;
+    }
+
+    .adicionar-endereco{
+        span{
+            text-decoration: underline;
         }
     }
 
@@ -52,7 +65,42 @@
         background-color:rgb(128,3,121,0.2);
         width: 100%;
         // border: 1px solid rgb(128, 3, 121, 0.8);
-        border-radius: .05rem;
+        border-radius: 0.5rem;
     }
+
+    .form-endereco{
+        padding: 2rem;
+    }
+
+    
+
+    .titulo{
+        border-bottom: 1px solid rgba(98, 98, 98, 0.726); 
+        background-color:rgb(187, 187, 187) ;
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+        padding: 1rem;
+
+        span:hover{
+            color:#A10D13;
+        }
+    }
+
+    .botao{
+        width: 8rem;
+        border-radius: 0.5rem;
+        height: 2.4rem;
+        background-color: $color-default;
+		color: white;
+    }
+
+    .botao-confirmar{
+        background-color: $color-default;
+        border-radius: 0.5rem;
+        color: white;
+        height: 2.4rem;
+        width: 13rem;
+    }
+
 }
 

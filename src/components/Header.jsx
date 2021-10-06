@@ -8,7 +8,7 @@ export default function Header() {
       <Container className='d-flex align-items-center'>
           <div className="logo">
             <img
-              src="https://static.pneustore.com.br/medias/sys_master/root/h03/h7e/8866891005982/PneuStore.png"
+              src="https://static.pneustore.com.br/medias/sys_master/root/hd3/hed/9042777407518/LOGO-PNEUSTORE-NEGATIVO.png"
               alt=""
             />
           </div>

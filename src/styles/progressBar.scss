@@ -1,5 +1,4 @@
-$color-green: #8AAC03;
-$color-red: #A10D13;
+$color-secondary:#68dcfa;
 
 .bar-progress {
 	position: relative;
@@ -11,7 +10,7 @@ $color-red: #A10D13;
 			content: '';
 			position: relative;
 			left: calc(50% - $width/2);
-			background-color: $color-red;
+			background-color: $color-secondary;
 			width: $width;
 			height: $width;
 			border-radius: 50%;
@@ -47,7 +46,7 @@ $color-red: #A10D13;
 			position: relative;
 			width: calc((525px / 3) * 1);
 			height: 3px;
-			background-color: $color-red;
+			background-color: $color-secondary;
 
 			@media screen and (max-width: 768px) {
 				width: calc((100% / 3) * 1);

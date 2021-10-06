@@ -1,3 +1,4 @@
+import React from 'react'
 import '../styles/resumoPedidoValor.scss'
 
 export default function ResumoPedido() {
