@@ -1,7 +1,23 @@
-import React from 'react'
+// @ts-nocheck
+import React, { useEffect, useState } from 'react'
+import { Api } from '../Api/Api';
 import '../styles/itemCarrinho.scss'
 
 export default function ItemCarrinho() {
+
+	const[itemCarrinho, setItemCarrinho] = useState(undefined);
+
+	// useEffect(() => {
+	// 	const loadData = async () => {
+	// 	  const response = await Api.buildAppGetRequest(Api.readAllTyreUrl(), true);
+	
+	// 	  const result = await response.json();
+
+	// 	  setItemCarrinho(result);
+			
+	// 	};
+	// 	loadData();
+	//   }, []);
 
 
 	return (
