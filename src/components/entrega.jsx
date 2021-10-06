@@ -4,17 +4,45 @@ import ProgressBar from "./FormAccount/ProgressBar";
 import React from "react";
 import Modal from "./modal/modal";
 
-export default function Entrega() {
+export default function Entrega({setPagamento, setEntrega}) {
+  
   const [CEP, setCEP] = useState(false);
 
   const [openModaCasa, setOpenModaCasa] = useState(false);
 
   const [enderecoEscolhido, setEnderecoEscolhido]= useState(undefined);
-  
+
+  const handleClick = () =>{
+    setPagamento(true)
+    setEntrega(false)
+  }
 
   return (
     <div>
       <ProgressBar />
+      {/* <div className="d-flex flex-column escolha-itens">
+          <h3 className="fw-bold">Escolha uma opção de entrega </h3>
+
+          <div className=" d-flex flex-column mt-5">
+            <label>Informe o seu CEP</label>
+            <div className="d-flex flex-row input">
+              <input
+                type="number"
+                name="CEP"
+                placeholder="Insira seu CEP"
+                required
+              />
+
+              <button
+                className="button-cep"
+                onClick={e => setCEP(true)}
+              >
+                Calcular entrega
+              </button>
+
+            </div>
+          </div>
+          </div> */}
       <form className="col-12 col-lg-8 ">
         <div className="d-flex flex-column escolha-itens">
           <h3 className="fw-bold">Escolha uma opção de entrega </h3>
@@ -28,13 +56,14 @@ export default function Entrega() {
                 placeholder="Insira seu CEP"
                 required
               />
-              <button
-                type="submit"
+
+              <span
                 className="button-cep"
-                onClick={(e) => setCEP(true)}
+                onClick={e => setCEP(true)}
               >
                 Calcular entrega
-              </button>
+              </span>
+
             </div>
           </div>
 
@@ -42,7 +71,7 @@ export default function Entrega() {
 
             {CEP ? (
               <div>
-                <h3 className="fw-bold mt-5">Tipos de entrega disponiveis</h3>
+                <h3 className="fw-bold mt-5">Tipos de entrega disponíveis</h3>
 
                 <div
                   className="card mt-3 card-entrega"
@@ -53,7 +82,10 @@ export default function Entrega() {
                     <h5 className="card-title">
                       Agende sua entrega com a PneuStore Móvel
                     </h5>
-                    {enderecoEscolhido?<div>bao</div> : <p className="card-text">Confira opções</p>} 
+                    {
+                    enderecoEscolhido?<div><p>endereço:rua teste 176</p></div> 
+                    : <p className="card-text">Confira opções</p>
+                    } 
                   </div>
                   
                 </div>
@@ -62,6 +94,7 @@ export default function Entrega() {
                 open={openModaCasa} 
                 setOpen={setOpenModaCasa}
                 setEnderecoEscolhido={setEnderecoEscolhido}
+                onClose={ () => setOpenModaCasa(false) } 
                 />
 
                 <div className="card mt-3 card-entrega">
@@ -92,7 +125,7 @@ export default function Entrega() {
                 </div>
 
                 <div className="mt-3 mb-3 d-flex justify-content-center">
-                  <button type="submit" className="button-cep">
+                  <button onClick={handleClick}  className="button-cep">
                     Continuar
                   </button>
                 </div>

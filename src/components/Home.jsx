@@ -10,9 +10,43 @@ import Header from "./Header";
 import FormAccount from "./FormAccount/FormAccount";
 import Resumo from "./resumo";
 import ItemCarrinho from "./ItemCarrinho";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { render } from "react-dom";
 
 export default function Home() {
+  const [conta, setConta] = useState(true);
+  const [pagamento, setPagamento] = useState(false);
+  const [entrega, setEntrega] = useState(false);
+  const [resumo, setResumo] = useState(false);
+
+
+  const [Render, setRender]= useState(undefined)
+
+
+  useEffect(()=>{
+    const render = () => {
+
+      if (entrega) {
+        return <Entrega setPagamento={setPagamento} setEntrega={setEntrega} />;
+      }
+  
+      if (pagamento) {
+        return <FormPagamento setResumo={setResumo} setPagamento={setPagamento} />;
+      }
+  
+      if (resumo) {
+        return <Resumo />;
+      } 
+      
+      else {
+        return <FormAccount setEntrega={setEntrega} />;
+      }
+  
+     
+    };
+    setRender(render)
+  },[entrega, pagamento, resumo])
+
   return (
     <>
       <Row>
@@ -25,7 +59,8 @@ export default function Home() {
               {/* <FormAccount />  */}
               {/* <FormPagamento/> */}
               {/* <Entrega /> */}
-              <Resumo/>
+              {/* <Resumo/> */}
+              {Render}
             </Col>
 
             <Col className="infos" md="4">

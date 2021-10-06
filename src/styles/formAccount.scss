@@ -1,4 +1,4 @@
-$color-green: #8AAC03;
+$color-default: #4e008e;
 $color-red: #A10D13;
 
 @keyframes appear {
@@ -39,7 +39,7 @@ form{
 	& button.submit {
 		outline: none;
 		border: none;
-		background-color: $color-green;
+		background-color: $color-default;
 		color: white;
 		padding: 0.2rem 0.5rem;
 		border-radius: 0.2rem;

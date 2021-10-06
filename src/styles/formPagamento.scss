@@ -1,4 +1,4 @@
-$color-green: #8AAC03;
+$color-default: #4e008e;
 
 .form-pagamento{
 
@@ -11,11 +11,9 @@ $color-green: #8AAC03;
         width: 13rem;
         border-radius: 0.5rem;
         height: 2.4rem;
+        background-color: $color-default;
+		color: white;
     }
 
-    .botao:hover{
-        background-color: white;
-        border: 1px solid $color-green;
-        color: $color-green;
-    }
+
 }

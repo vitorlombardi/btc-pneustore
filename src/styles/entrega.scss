@@ -1,4 +1,4 @@
-$color-green: #8aac03;
+$color-default: #4e008e;
 
 .escolha-itens{
 
@@ -25,20 +25,17 @@ $color-green: #8aac03;
         margin-left: 1rem;
         color: white;
         border: 1px solid;
-        border-color: $color-green;
+        border-color: $color-default;
         border-radius: 0.5rem;
-        background-color: $color-green;
+        background-color: $color-default;
+        text-align: center;
     }
-
-    .button-cep:hover{
-		color: #8aac03;
-		background-color:white;
-		color: $color-green;
-	}
 
     .card-entrega:hover{
-        border: 2px solid $color-green
+        border: 2px solid $color-default
     }
 
-    
+    span{
+        cursor: pointer;
+    }
 }
