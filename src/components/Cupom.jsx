@@ -1,10 +1,10 @@
 import '../styles/cupom.scss'
 import { useState } from 'react'
+import React from 'react'
 
 
 export default function Cupom() {
 	const [codigo, setCodigo] = useState('')
-	console.log(codigo)
 
 	function handleSubmit(event){
 		event.preventDefault()
